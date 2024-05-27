@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib as mpl
+import matplotlib.plot as plt
 
 
 
@@ -29,4 +29,4 @@ for k in range(runs):
             E_new = E_old
             spin_arr[i,j] = -spin_arr[i,j]
 
-mpl.pyplot.plot(M_arr)
+plt.plot(M_arr)
