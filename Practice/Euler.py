@@ -1,6 +1,6 @@
 from math import sin
 import numpy as np
-import matplotlib as mpl
+import matplotlib.pyplot as plt
 
 def f(x,t):
     return -x**3 + sin(t)
@@ -17,4 +17,4 @@ x_arr = np.zeros(len(t_arr))
 for t in range(2,len(t_arr)):
     x_arr[t] = x_arr[t-1] + h*f(x_arr[t-1],t_arr[t])
     
-mpl.pyplot.plot(t_arr,x_arr)
+plt.plot(t_arr,x_arr)
